@@ -4,10 +4,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Project Mini-course RevoU</title>
     <link rel="stylesheet" href="css\styles.css">
 </head>
 <body>
+    <nav>
+        <header>
+            <div class="logo-icon"></div>
+        </header>
+
+        <section class="nav-container">
+            <a href="#home" class="nav-item">Home</a>
+            <a href="#ourprofile" class="nav-item">Our Profile</a>
+            <a href="#messageus" class="nav-item">Message us</a>
+        </section>
+
+    </nav>
+
+    <hr />
+
+    <main>
+        <article>
+            <header id="home">
+                <h1 id="greeting">Hi there, Welcome to our Department!</h1>
+            </header>
+
+            <p>This is our department in Computer & Information Sciences</p>
+            <div class="banner-img"></div>
+        </article>
+
+        <hr />
+
+        <section>
+            <header id="ourprofile">
+                <h1>Our Profile</h1>
+                <p>Computer & Information Sciences</p>
+            </header>
+
+            <section class="profile-container">
+                <div class="profile-item">
+                    <div class="profile-img"></div>
+                    <h2>Software Engineering</h2>
+                </div>
+
+                <div class="profile-item">
+                    <div class="profile-img"></div>
+                    <h2>Information Technology</h2>
+                </div>
+
+                <div class="profile-item">
+                    <div class="profile-img"></div>
+                    <h2>Information Systems</h2>
+                </div>
+            </section>
+        </section>
+
+        <hr />
+
+       <section>
+        <div class="container">
+            <div class="form-container">
+                <div id="messageus" class="form-title">Message us</div>
+                <form id="formMessage">
+                    <div class="form-group">
+                        <label for="nama">Nama:</label>
+                        <input type="text" id="nama" name="nama" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tanggalLahir">Tanggal Lahir:</label>
+                        <input type="date" id="tanggalLahir" name="tanggalLahir" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Jenis Kelamin:</label>
+                        <div class="form-group-radio">
+                            <label><input type="radio" name="jenisKelamin" value="Laki-Laki" required> Laki-Laki</label>
+                            <label><input type="radio" name="jenisKelamin" value="Perempuan" required> Perempuan</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="pesan">Pesan:</label>
+                        <textarea id="pesan" name="pesan" rows="4" required></textarea>
+                    </div>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="result-container">
+                <p>Nama : <span id="resultNama"></span></p>
+                <p>Tanggal Lahir : <span id="resultTanggalLahir"></span></p>
+                <p>Jenis Kelamin : <span id="resultJenisKelamin"></span></p>
+                <p>Pesan : <span id="resultPesan"></span></p>
+            </div>
+        </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>Made by Syinfa Fatwa</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
     
 </body>
 </html>
